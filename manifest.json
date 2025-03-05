@@ -1,0 +1,86 @@
+{
+    "name": "Angel Portfolio",
+    "short_name": "Portfolio",
+    "description": "Portafolio de Ángel, desarrollador de software.",
+    "start_url": "./index.html?utm_source=web_app_manifest",
+    "display": "standalone",
+    "background_color": "#EBD758",
+    "theme_color": "#EBD758",
+    "orientation": "portrait-primary",
+    "lang":"es-MX",
+    "scope":"./",
+    "icons": [
+        {
+            "src": "./imagenes/icono16.jpg",
+            "sizes": "16x16",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./imagenes/icono32.jpg",
+            "sizes": "32x32",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./imagenes/icono64.jpg",
+            "sizes": "64x64",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./imagenes/icono96.jpg",
+            "sizes": "96x96",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./imagenes/icono128.jpg",
+            "sizes": "128x128",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./imagenes/icono144.jpg",
+            "sizes": "144x144",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./imagenes/icono192.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./imagenes/icono240.jpg",
+            "sizes": "240x240",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./imagenes/icono256.jpg",
+            "sizes": "256x256",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./imagenes/icono384.jpg",
+            "sizes": "384x384",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./imagenes/icono512.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./imagenes/icono1024.jpg",
+            "sizes": "1024x1024",
+            "type": "image/jpeg",
+            "form_factor": "wide"
+        }
+    ]
+}

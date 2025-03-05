@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio PWA</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#EBD758">
+
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandhelFriendly" content="true"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta rel="apple-touch-icon" href="imagenes/icono_fuego.jpg"/>
+    <meta rel="apple-touch-startup-image" href="imagenes/icono_fuego.jpg"/>;
+
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <script src="/js/main.js"></script>
+
+
+    <link rel="manifest" href="manifest.json"/>
+
+
+   
+
+</head>
+<body>
+    <header>
+        <h1>Angel Portafolio</h1>
+        <h2>Your Next Software Developer</h2>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h3>My Projects</h3>
+            <div class="project">
+                <h4>Sistema de Estacionamiento Inteligente</h4>
+                <p>Un sistema desarrollado con PHP y sensores para detectar estacionamientos disponibles y mostrarlos en una aplicación web.</p>
+                <img src="imagenes/estacionamiento.png" alt="Sistema de Estacionamiento" />
+            </div>
+            <div class="project">
+                <h4>Sitio Web para Florería</h4>
+                <p>Un sitio web diseñado con PHP, HTML, CSS y JavaScript para optimizar la experiencia del cliente.</p>
+                <img src="imagenes/flores.jpg" alt="Sitio web para florería" />
+            </div>
+            <div class="project">
+                <h4>Videojuego 2D en Unity (En proceso)</h4>
+                <p>Un videojuego en desarrollo que utiliza Unity y Git para el control de versiones.</p>
+                <img src="imagenes/unity.png" alt="Sitio web para florería" />
+            </div>
+        </section>
+
+        <section id="cta">
+            <h3>¿Listo para trabajar conmigo?</h3>
+            <p>Haz clic en el botón de abajo para ponerte en contacto.</p>
+            <button id="contact-btn">Contáctame</button>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h3>Contacta conmigo</h3>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <p>Con experiencia en desarrollo de software y diseño web, estoy listo para llevar tus proyectos al siguiente nivel.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ángel. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(() => {
+                console.log('Service Worker registrado correctamente.');
+            }).catch(err => {
+                console.error('Error al registrar el Service Worker:', err);
+            });
+        }
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            alert(`Gracias, ${name}. Tu mensaje ha sido enviado: \n${message}`);
+        });
+    </script>
+</body>
+</html>
